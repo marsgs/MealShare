@@ -1,0 +1,25 @@
+{
+  "name": "4155project",
+  "version": "1.0.0",
+  "description": "MealShare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marisol",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marsgs/MealShare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marsgs/MealShare/issues"
+  },
+  "homepage": "https://github.com/marsgs/MealShare#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
