@@ -270,11 +270,21 @@ div.involved-page-content p {
     padding-bottom: 5px;
 }
 
-aside.involved-page-sidebar {
+div.involved-left-column {
+  width: 70%;
+}
+
+.involved-sidebar-container {
     width: 30%;
     float: right;
+    overflow: hidden;
     padding-left: 5%;
+}
+
+.involved-sidebar {
     text-align: center;
+    margin-bottom: -5000px;
+    padding-bottom: 5000px; 
 }
 
 #involved-page-map-ratio {
@@ -323,7 +333,54 @@ aside.involved-page-sidebar {
 
 /* signin.html */
 #login {
-  margin-top: 100px;
-  margin-left: 500px;
-  font-size: 30px;
+}
+
+#volunteer-form {
+    height: 200px;
+    font-size: 16px;
+    border: 1px solid black;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+#volunteer-login-content {
+    width: 70%;
+    float: left;
+    padding-left: 1%; 
+}
+
+#volunteer-login-button-container  {
+    text-align: center;
+}
+
+#volunteer-login-button {
+    width: 10%;
+    font-size: 16px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+}
+
+#provider-form {
+    height: 200px;
+    font-size: 16px;
+    border: 1px solid black;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+#provider-login-content {
+    width: 70%;
+    float: left;
+    padding-left: 1%;
+}
+
+#provider-login-button-container  {
+    text-align: center;
+}
+
+#provider-login-button {
+    width: 10%;
+    font-size: 16px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
 }
