@@ -1,7 +1,17 @@
-const express = require('express');
+var express = require('express')
+var app = express()
+var path = require('path');
 
-const app = express();
+app.set ('view engine','ejs');
+//app.use('/views',express.static('views'))
+//app.use('/ressources',express.static('ressources'))
+//app.use('/assets', express.static(__dirname +'/../resources'));
 
+//app.get('/', (req, res) => res.render('store'));
 
-const PORT = process.env.PORT || 5000; 
-app.listen(PORT, () => console.log('Server Started on Port ${PORT}'));
+app.get('/', function(req, res){
+
+res.render('store');
+});
+
+app.listen(3000, () => console.log(`Meal Share app listening on port 3000!`));
