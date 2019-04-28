@@ -49,32 +49,9 @@
                   <p> <a href="/scheduleDroppOff">Schedule a Dropp Off</a> </p><br>
 
                   <% include partials/user-profile-navigation.ejs %>
-                  <section>
-                  <form method="post">
-                    <div id="dropform">
-                        <p> Which location will you be dropping off the food package ?</p>
-                            <input type="text" name="location">
 
-                        <p>What day will you be dropping off food donations ?</p>
-                            <input type="checkbox" name="days" value="Monday">Monday
-                            <input type="checkbox" name="days" value="Tuesday">Tuesday
-                            <input type="checkbox" name="days" value="Wednesday">Wednesday
-                            <input type="checkbox" name="days" value="Thursday">Thursday<br>
-                            <input type="checkbox" name="days" value="Friday">Friday
-                            <input type="checkbox" name="days" value="Saturday">Saturday
-                            <input type="checkbox" name="days" value="Sunday">Sunday<br><br>
-
-                        <p> What time will you be dropping off the food?</p>
-                            <input type="radio" name="time" value="Morning">7:00am - 8:15am
-                            <input type="radio" name="time" value="Lunch">1:00pm - 2:30pm
-                            <input type="radio" name="time" value="Afternoon">5:00pm<br><br>
-
-                            <input type="button" value="Submit">
-                    </div>
-                    </form>
-                  </section>
-                  </div>
-        </div>
-        <% include partials/footer-navigation.ejs %>
-    </body>
+                </div>
+      </div>
+      <% include partials/footer-navigation.ejs %>
+  </body>
 </html>

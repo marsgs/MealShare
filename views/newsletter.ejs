@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="calendar.js"></script>
+
     </head>
     <body>
         </head>
@@ -46,7 +48,22 @@
                 <p>If you would like to stay up-to-date with your Meal Share community does, join the mailling list.</p><br>
 
                 <p>You will receive updates on the impact that your donations are having, notifications for when donations are in need and when
-                  donations are just enough. Also, you will be notified of any other events created by your community!</p>
+                  donations are just enough. Also, you will be notified of any other events created by your community!</p><br>
+
+                  <!-- [DATE SELECTOR] -->
+              <div id="selector">
+              <select id="month"></select>
+              <select id="year"></select>
+              <input type="button" value="SET" onclick="cal.list()"/><br>
+            </div><br><br>
+
+              <!-- [CALENDAR] -->
+              <div id="container"></div>
+
+              <!-- [EVENT] -->
+              <div id="event"></div><br>
+
+
 
                   <a> Check us out on our solical medical</a><br>
 

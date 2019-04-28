@@ -77,6 +77,11 @@ app.get('/impactOfDonations', function(req,res){
     res.render('impactOfDonations')
 })
 
+app.get('/profileIndex', function(req,res){
+  console.log(req)
+    res.render('profileIndex')
+})
+
 
 
 
