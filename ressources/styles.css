@@ -396,6 +396,11 @@ div.involved-left-column {
     border: 1px solid darkgrey;
 }
 
+#profileInstructions {
+  margin-left: 300px;
+  margin-top: -150px;
+}
+
 
 
 
