@@ -2,16 +2,78 @@
 
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title> Registration Involved as a Donor</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-  <body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title> Registration Involved as a Donor</title>
+</head>
 
+<body>
 
-  </body>
+  <header>
+    <nav class="navbar navbar-style">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="logo" src="logo.png">
+        </div>
+        <div class="collapse navbar-collapse" id="micon">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/involved">Get Involved</a></li>
+            <li><a href="/Newsletter">Newsletter</a></li>
+            <li><a href="/Signin">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="homepage-content">
+    <div class="homepage-main-text">
+      <span class="h1-heading-margins">
+        <h1>Application to be a Food Provider</h1>
+      </span>
+
+      <div class="involved-donor-form-container">
+        <form>
+          <div style="display:flex; flex-wrap: wrap">
+            <div style="width:50%">
+              <p>First Name: <input id="first-name" type="text"></p>
+              <p>Last Name: <input id="last-name" type="text"></p>
+              <p>Date of Birth: <input id="dob" type="date"></p>
+              <p>Email: <input id="email" type="email"></p>
+              <p>Phone: <input id="phone" type="tel"></p>
+              <input type="checkbox" id="business-reveal"> <span style="font-size:16px"> Are you a representative for a business/company?</span>
+
+              <div class="reveal-if-active">
+                <hr>
+                <h4 style="text-decoration:underline">Business Information</h4><br>
+                <p>Business Name: <input id="business-name" type="text"></p>
+                <p>Address: <input id="business-address" type="text"></p>
+                <p>Phone: <input id="business-phone" type="tel"></p>
+              </div>
+            </div>
+
+            <div style="width:50%">
+              <p>Why do you or your business want to become a Meal Share member?</p>
+              <p><textarea rows="4" cols="70" id="additional-info" placeholder="Additional info..."></textarea></p>
+              <input type="submit" value="Submit Application">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

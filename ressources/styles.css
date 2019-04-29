@@ -326,7 +326,6 @@ div.involved-left-column {
 
 #volunteer-button-wrapper {
     text-align: center;
-    padding-top: 20px;
     padding-bottom: 15px;
 }
 
@@ -405,4 +404,26 @@ div.involved-left-column {
     font-size: 16px;
     background-color: lightgrey;
     border: 1px solid darkgrey;
+}
+
+
+
+
+
+
+
+
+
+/* involvedAsDonor.html */
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px;
+  overflow: visible;
 }
