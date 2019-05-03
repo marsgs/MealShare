@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<<<<<<< HEAD
   <head>
     <meta charset="utf-8">
     <title> scheduleDroppOff</title>
@@ -69,8 +70,55 @@
               </table>
 
               </div>
-    </div>
-    <% include partials/footer-navigation.ejs %>
+=======
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title> scheduleDroppOff</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="homepage-content">
+    <div class="homepage-main-text">
+      <h1> Donation Record </h1>
+
+      <p> <a href="/scheduleDroppOff">Schedule a Dropp Off </a> > <a href="/donationRecord">Donation Record </a>
+        <p><br>
+
+          <% include partials/user-profile-navigation.ejs %>
+          <table id="mydonation">
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Meal Provided</th>
+            </tr>
+            <tr>
+              <td>06/11/2018</td>
+              <td>Fruit,rice</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>08/23/2018</td>
+              <td>Bread,salad,Chicken,peanuts</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>08/31/2018</td>
+              <td>Juice,cake</td>
+              <td>1</td>
+            </tr>
+          </table>
+
+>>>>>>> b27034a68e5e1ae51267caadacead6c5295ecf89
+    </div>
+  </div>
+  <% include partials/footer-navigation.ejs %>
+
+</body>
+
 </html>
