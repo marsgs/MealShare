@@ -79,7 +79,7 @@ app.get('/impactOfDonations', function(req,res){
 
 app.get('/profileIndex', function(req,res){
   console.log(req)
-    res.render('profileIndex')
+    res.render('profileIndex.ejs')
 })
 
 
