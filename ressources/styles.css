@@ -48,10 +48,18 @@ table, th, td {
 section {
   margin-left: 300px;
   margin-top: -130px;
+  padding: 15px 20px;
   border-style: solid;
   border-width: thin;
 }
 
+section .dropform input {
+  margin-left: 15px;
+}
+
+section .dropform select {
+  margin-left: 15px;
+}
 
 #micon {
     margin-top: 1%;
@@ -364,7 +372,7 @@ div.involved-left-column {
 }
 
 #volunteer-login-button {
-    width: 30%;
+    width: 15%;
     font-size: 16px;
     background-color: lightgrey;
     border: 1px solid darkgrey;
@@ -390,7 +398,7 @@ div.involved-left-column {
 }
 
 #provider-login-button {
-    width: 30%;
+    width: 15%;
     font-size: 16px;
     background-color: lightgrey;
     border: 1px solid darkgrey;
@@ -401,8 +409,12 @@ div.involved-left-column {
   margin-top: -100px;
 }
 
-
-
+.account-container {
+  margin-left: 300px;
+  padding: 15px 20px;
+  border-style: solid;
+  border-width: thin;
+}
 
 
 

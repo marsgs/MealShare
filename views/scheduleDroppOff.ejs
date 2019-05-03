@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    </head>
-    <body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
 
 
 
-        <header>
-            <nav class="navbar navbar-style">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <img class="logo" src="logo.png" >
-                    </div>
-                    <div class="collapse navbar-collapse" id="micon">
-                        <ul class="nav navbar-nav navbar-right">
-
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/involved">Get Involved</a></li>
-                            <li><a href="/Newsletter">Newsletter</a></li>
-                            <li><a href="/Signin">Sign In/Sign Out</a></li>
-
-                        </ul>
-                    </div>
+    <header>
+        <nav class="navbar navbar-style">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="logo" src="logo.png">
                 </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
 
-            </nav>
-        </header>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/involved">Get Involved</a></li>
+                        <li><a href="/Newsletter">Newsletter</a></li>
+                        <li><a href="/Signin">Sign In/Sign Out</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
 
 
 
-        <div class="homepage-content">
-            <div class="homepage-main-text">
-                <span class="h4-heading-margins">
+    <div class="homepage-content">
+        <div class="homepage-main-text">
+            <span class="h4-heading-margins">
 
-                  <h1> userName Profile </h1>
+                <h1> userName Profile </h1>
 
-                  <p> <a href="/scheduleDroppOff">Schedule a Dropp Off</a> </p><br>
+                <p> <a href="/scheduleDroppOff">Schedule a Dropp Off</a> </p><br>
 
-                  <% include partials/user-profile-navigation.ejs %>
-                  <section>
-                  <form method="post">
-                    <div id="dropform">
-                        <p> Which location will you be dropping off the food package ?</p>
-                            <input type="text" name="location">
+                <% include partials/user-profile-navigation.ejs %>
+                <section>
+                    <form method="post">
+                        <div class="dropform">
+                            <p> Which location will you be dropping off the food package?</p>
+                            <select name="location">
+                                <option value="" selected="selected" disabled hidden></option> 
+                                <option value="">123 Lane St, Raleigh, NC</option>
+                                <option value="">584 Brookes Ln, Raleigh, NC</option>
+                                <option value="">392 Wayward Rd, Durham, NC</option>
+                            </select><br><br> 
 
-                        <p>What day will you be dropping off food donations ?</p>
-                            <input type="checkbox" name="days" value="Monday">Monday
-                            <input type="checkbox" name="days" value="Tuesday">Tuesday
-                            <input type="checkbox" name="days" value="Wednesday">Wednesday
-                            <input type="checkbox" name="days" value="Thursday">Thursday<br>
-                            <input type="checkbox" name="days" value="Friday">Friday
-                            <input type="checkbox" name="days" value="Saturday">Saturday
-                            <input type="checkbox" name="days" value="Sunday">Sunday<br><br>
+                            <p>What day will you be dropping off food donations?</p>
+                            <input type="checkbox" name="days" value="Monday"> Monday
+                            <input type="checkbox" name="days" value="Tuesday"> Tuesday
+                            <input type="checkbox" name="days" value="Wednesday"> Wednesday
+                            <input type="checkbox" name="days" value="Thursday"> Thursday<br>
+                            <input type="checkbox" name="days" value="Friday"> Friday
+                            <input type="checkbox" name="days" value="Saturday"> Saturday
+                            <input type="checkbox" name="days" value="Sunday"> Sunday<br><br>
 
-                        <p> What time will you be dropping off the food?</p>
-                            <input type="radio" name="time" value="Morning">7:00am - 8:15am
-                            <input type="radio" name="time" value="Lunch">1:00pm - 2:30pm
-                            <input type="radio" name="time" value="Afternoon">5:00pm<br><br>
+                            <p> What time will you be dropping off the food?</p>
+                            <input type="radio" name="time" value="Morning"> 7:00am - 8:15am
+                            <input type="radio" name="time" value="Lunch"> 1:00pm - 2:30pm
+                            <input type="radio" name="time" value="Afternoon"> 5:00pm<br><br>
 
                             <input type="button" value="Submit">
-                    </div>
+                        </div>
                     </form>
-                  </section>
-                  </div>
+                </section>
         </div>
-        <% include partials/footer-navigation.ejs %>
-    </body>
+    </div>
+    <% include partials/footer-navigation.ejs %>
+</body>
+
 </html>
