@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/ressources'));
 
 app.get('/', function(req, res){
   console.log(req.url)
-res.render(path + 'index');
+res.render('index');
 });
 
 app.get('/Involved', function(req, res){
@@ -79,7 +79,7 @@ app.get('/impactOfDonations', function(req,res){
 
 app.get('/profileIndex', function(req,res){
   console.log(req)
-    res.render('profileIndex.ejs')
+    res.render('profileIndex')
 })
 
 
