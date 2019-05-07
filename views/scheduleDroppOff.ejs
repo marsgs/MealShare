@@ -52,7 +52,7 @@
 
                 <% include partials/user-profile-navigation.ejs %>
                 <section>
-                    <form action=/dropInfo method="POST">
+                    <form action="/dropInfo" method="POST">
                         <div class="dropform">
                             <p> Which location will you be dropping off the food package?</p>
                             <select name="location">
@@ -76,7 +76,7 @@
                             <input type="radio" name="time" value="Lunch"> 1:00pm - 2:30pm
                             <input type="radio" name="time" value="Afternoon"> 5:00pm<br><br>
 
-                            <input type="button" value="Submit">
+                            <input type="submit" value="Submit">
                         </div>
                     </form>
                 </section>
