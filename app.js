@@ -68,9 +68,15 @@ app.get('/Store', function(req, res){
 res.render('store');
 });
 
-app.get('/InvolvedAsDonor', function(req, res){
+app.get('/InvolvedAsDonor*', function(req, res){
   console.log(req.url)
 res.render('involvedAsDonor');
+});
+
+app.post('/donInfo*', function(req, res){
+  console.log(req.url);
+  var data = itemDB.getItems(0);
+  res.render('registerThank', {data: data});
 });
 
 app.get('/InvolvedAsVolunteer', function(req, res){
@@ -78,12 +84,18 @@ app.get('/InvolvedAsVolunteer', function(req, res){
 res.render('involvedAsVolunteer');
 });
 
+app.post('/volInfo*', function(req, res){
+  console.log(req.url)
+var data = itemDB.getItems(0);
+res.render('registerThank', {data: data});
+});
+
 app.get('/userProfile', function(req, res){
   console.log(req.url)
 res.render('userProfile');
 });
 
-app.get('/scheduleDroppOff', function(req, res){
+app.get('/scheduleDroppOff*', function(req, res){
   console.log(req.url);
   var data = itemDB.getItems(0);
 res.render('scheduleDroppOff', {data: data});
