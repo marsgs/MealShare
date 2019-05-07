@@ -55,14 +55,22 @@
           <div class="account-container">
             <form>
               <div style="display:flex; flex-wrap:wrap">
-                <div style="width:50%">
-                  <p>First Name: <input id="first-name" type="text" value="<%= data[0].firstName %> "></p>
-                  <p>Last Name: <input id="last-name" type="text" value="<%= data[0].lastName %>"</p>
-                  <p>Date of Birth: <input id="dob" type="date" value="<%= data[0].dateOfBirth %> "></p>
-                  <p>Email: <input id="email" type="email" value="<%= data[0].email %> "></p>
-                  <p>Phone: <input id="phone" type="tel" value="<%= data[0].phone %> "></p>
+                <div style="width:160px; line-height:1.65">
+                  <p>First Name: </p>
+                  <p>Last Name: </p>
+                  <p>Date of Birth: </p>
+                  <p>Email: </p>
+                  <p>Phone: </p>
 
-                  <input type="button" value="Submit Edits for Approval">
+                  <br><input type="button" value="Submit Edits">
+                </div>
+
+                <div style="width:50%">
+                  <p><input id="first-name" type="text" value="<%= data[0].firstName %> "></p>
+                  <p><input id="last-name" type="text" value="<%= data[0].lastName %> "></p>
+                  <p><input id="dob" type="date" value="<%= data[0].dateOfBirth %> "></p>
+                  <p><input id="email" type="email" value="<%= data[0].email %> "></p>
+                  <p><input id="phone" type="tel" value="<%= data[0].phone %> "></p>
                 </div>
               </div>
             </form>
