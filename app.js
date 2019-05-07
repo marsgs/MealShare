@@ -51,10 +51,12 @@ app.post('/signInfo*', function(req, res){
 
   console.log(req.url)
   var data = itemDB.getItems(0);
+  var data1 = data[0].userName;
   console.log(data[0]);
   console.log(req.body);
   if(req.body.username == data[0].userName && req.body.password == data[0].password){
-    res.render("profileIndex");
+
+    res.render("profileIndex", {data: data});
   }else {
     res.render("signin");
   }
@@ -82,28 +84,40 @@ res.render('userProfile');
 });
 
 app.get('/scheduleDroppOff', function(req, res){
-  console.log(req.url)
-res.render('scheduleDroppOff');
+  console.log(req.url);
+  var data = itemDB.getItems(0);
+res.render('scheduleDroppOff', {data: data});
+});
+
+app.post('/dropInfo*', function(req, res){
+  console.log(req.url);
+  var data = itemDB.getItems(0);
+  res.render('dropthank', {data: data});
 });
 
 app.get('/account', function(req, res){
-  console.log(req.url)
-res.sendFile('account.html');
+  console.log(req.url);
+  var data = itemDB.getItems(0);
+res.render('account',{data: data});
 });
 
 app.get('/donationRecord', function(req,res){
-  console.log(req)
-    res.render('donationRecord')
+  console.log(req);
+  var data = itemDB.getItems(0);
+    res.render('donationRecord',{data: data})
 })
 
 app.get('/impactOfDonations', function(req,res){
-  console.log(req)
-    res.render('impactOfDonations')
+  console.log(req);
+  var data = itemDB.getItems(0);
+    res.render('impactOfDonations', {data: data})
 })
 
 app.get('/profileIndex', function(req,res){
   console.log(req)
-    res.render('profileIndex')
+  var data = itemDB.getItems(0);
+  console.log('my'+data);
+    res.render('profileIndex', {data: data})
 })
 
 

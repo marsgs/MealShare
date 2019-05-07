@@ -46,21 +46,21 @@
         <div class="homepage-main-text">
             <span class="h4-heading-margins">
 
-                <h1> userName Profile </h1>
+                <h1> <%= data[0].firstName %> <%= data[0].lastName %>'s drop off scheduling </h1>
 
-                <p> <a href="/scheduleDroppOff">Schedule a Dropp Off</a> </p><br>
+                <p> <a href="/profileIndex">My profile</a> > <a href="/scheduleDroppOff">Schedule a Dropp Off</a> </p><br>
 
                 <% include partials/user-profile-navigation.ejs %>
                 <section>
-                    <form method="post">
+                    <form action=/dropInfo method="POST">
                         <div class="dropform">
                             <p> Which location will you be dropping off the food package?</p>
                             <select name="location">
-                                <option value="" selected="selected" disabled hidden></option> 
+                                <option value="" selected="selected" disabled hidden></option>
                                 <option value="">123 Lane St, Raleigh, NC</option>
                                 <option value="">584 Brookes Ln, Raleigh, NC</option>
                                 <option value="">392 Wayward Rd, Durham, NC</option>
-                            </select><br><br> 
+                            </select><br><br>
 
                             <p>What day will you be dropping off food donations?</p>
                             <input type="checkbox" name="days" value="Monday"> Monday

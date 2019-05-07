@@ -41,9 +41,9 @@
         <div class="homepage-main-text">
             <span class="h4-heading-margins">
 
-              <h1> Donation Record </h1>
+              <h1> <%= data[0].firstName %> <%= data[0].lastName %>'s Donation Record </h1>
 
-              <p> <a href="/scheduleDroppOff">Schedule a Dropp Off  </a> > <a href="/donationRecord">Donation Record  </a> <p><br>
+              <p> <a href="/profileIndex">My profile</a> > <a href="/scheduleDroppOff">Schedule a Dropp Off  </a> > <a href="/donationRecord">Donation Record  </a> <p><br>
 
               <% include partials/user-profile-navigation.ejs %>
               <table id="mydonation">
