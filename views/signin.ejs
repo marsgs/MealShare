@@ -46,43 +46,28 @@
 
             <div class="login-container">
                 <div class="login">
-                    <form id="volunteer-form">
-
+                    <form id="volunteer-form" action="/signInfo" method="POST">
+                      <% if(locals.data) { %>
+                        <%=data%>
+                        <%}%>
                         <span class="h4-heading-margins">
                             <h4>Volunteer Sign In</h4>
                         </span>
 
                         <div id="volunteer-login-content">
                             <label>Username:</label>
-                            <input type="text" value="" placeholder="username"><br><br>
+                            <input type="text" name="username"><br><br>
 
                             <label>Password:</label>
-                            <input type="password" value="" placeholder="password"><br>
+                            <input type="password" name="password"><br>
                         </div>
 
                         <div id="volunteer-login-button-container">
-                            <button type="submit" id="volunteer-login-button">Sign In</button>
+                            <button type="submit" value="sign in" id="volunteer-login-button">Sign In</button>
                         </div>
                     </form>
 
-                    <form id="provider-form">
 
-                        <span class="h4-heading-margins">
-                            <h4>Food Provider Sign In</h4>
-                        </span>
-
-                        <div id="provider-login-content">
-                            <label>Username:</label>
-                            <input type="text" value="" placeholder="username"><br><br>
-
-                            <label>Password:</label>
-                            <input type="password" value="" placeholder="password"><br>
-                        </div>
-
-                        <div id="provider-login-button-container">
-                            <button type="submit" id="provider-login-button" >Sign In</button>
-                        </div>
-                    </form>
                 </div>
                 <!--<a id="loginRegistrationLink" href="registrationPage.html">You don't have an account? Please register here.</a>-->
             </div>
