@@ -5,7 +5,7 @@ var path = __dirname + '/views/';
 //const path = require('path');
 app.set ('view engine','ejs');
 var mongoose = require('mongoose');
-var itemDB = require('/Users/habibmda/Documents/GitHub/MealShare/utility/itemDB.js');
+var itemDB = require('./utility/itemDB.js');
 var session = require('express-session');
 app.use(session({secret: "nbad session secret"}));
 const bodyParser = require('body-parser');
